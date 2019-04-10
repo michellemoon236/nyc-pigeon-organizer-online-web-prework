@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
         # #binding.pry
         # new_pigeon_hash[attribute] = {pigeon_attribute => attribute_type_array}
         new_pigeon_hash[attribute] = {pigeon_attribute => (attribute_type_array << attribute_type.to_s)}
-        #binding.pry
+        binding.pry
       end
     end
   end
