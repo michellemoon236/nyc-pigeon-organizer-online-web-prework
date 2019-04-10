@@ -5,16 +5,16 @@ def nyc_pigeon_organizer(data)
   #binding.pry
   data.each do |pigeon_attribute, attribute_data|
     #binding.pry
-    attribute_data.each do |attribute_type, attribute_value|
+    attribute_data.each do |attribute_type, attribute_values|
       #binding.pry
-      attribute_value.each do |attribute|
+      attribute_values.each do |attribute|
         #binding.pry
         attribute_type_array = []
-        attribute_type_array << (attribute_type.to_s)
-        binding.pry
+        #attribute_type_array << (attribute_type.to_s)
+        #binding.pry
         # new_pigeon_hash[attribute] = {pigeon_attribute => attribute_type_array}
-        new_pigeon_hash[attribute] = {pigeon_attribute => attribute_type_array}
-        binding.pry
+        new_pigeon_hash[attribute] = {pigeon_attribute => (attribute_type_array << attribute_type.to_s)}
+        #binding.pry
       end
     end
   end
