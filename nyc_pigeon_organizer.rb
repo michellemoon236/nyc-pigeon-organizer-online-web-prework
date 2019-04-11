@@ -8,7 +8,8 @@ def nyc_pigeon_organizer(data)
     attribute_data.each do |attribute_type, attribute_values|
       #binding.pry
       attribute_values.each do |attribute|
-        #binding.pry
+        binding.pry
+        new_pigeon_hash[attribute] = {}
         attribute_type_array = []
         new_pigeon_hash[attribute] = {pigeon_attribute => (attribute_type_array << attribute_type.to_s)}
         #binding.pry
