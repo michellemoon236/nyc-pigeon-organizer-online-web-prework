@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       attribute_values.each do |pigeon_name|
         #binding.pry
+        if new_pigeon_hash.empty? 
         new_pigeon_hash[pigeon_name] = {}
         new_pigeon_hash[pigeon_name][pigeon_attribute] = []
         new_pigeon_hash[pigeon_name][pigeon_attribute] << attribute_type.to_s
