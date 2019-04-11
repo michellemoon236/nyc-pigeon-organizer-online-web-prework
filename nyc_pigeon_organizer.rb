@@ -12,7 +12,6 @@ def nyc_pigeon_organizer(data)
         new_pigeon_hash[pigeon_name] ||= {}
         new_pigeon_hash[pigeon_name][pigeon_attribute] ||= []
         new_pigeon_hash[pigeon_name][pigeon_attribute] << attribute_type.to_s
-        #new_pigeon_hash[attribute] = {pigeon_attribute => (attribute_type_array << attribute_type.to_s)}
         #binding.pry
       end
     end
